@@ -1,0 +1,98 @@
+header{
+    height:5rem;
+    background-color:gray;
+}
+.title{
+    height:50%;
+    display:flex;
+    align-items:center;
+    gap:0.25rem;
+}
+.title_image{
+    height:60%;
+    align-items:center;
+    margin-left:10px;
+}
+.title_text{
+    font-size:1rem;
+    text-align:center;
+}
+.menu{
+    height:50%;
+    display:flex;
+    align-items:center;
+    gap:1rem;
+    margin-left:10px;
+}
+.menubar{
+    position:relative;
+    z-index: 10;
+}
+
+.dropdown{
+    background-color:gray;
+    position:absolute;
+    width:9rem;
+    top:2px;
+    display:none;
+}
+li{
+    padding:0.25rem;
+}
+.menu-btn:hover{
+    background-color:white;
+}
+.menubar:hover .dropdown{
+    display:block;
+}
+li:hover{
+    background-color:white;
+}
+.menufile{
+    display:none;
+}
+main{
+    height:calc(100vh - 8rem);
+    background-color:lightgray;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    display:flex;
+}
+.toast{
+    position:fixed;
+    font-size:2rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    right:47px;
+    top:80px;
+    display:none;
+    background-color:chartreuse;
+    border:5px solid red;
+}
+.video{
+    height:100%;
+}
+footer{
+    height:3rem;
+    background-color:gray;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 10px;
+    background-color: #444;
+}
+
+#controls i {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#controls i:hover {
+    transform: scale(1.2);
+    color: orange;
+}
